@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffdccc;
+            color: #F8AD9D;
+            font-family: "Poppins", serif;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffe3e0; 
+            padding: 10px 20px;
+        }
+
+        .logo-text {
+            margin: 0;
+            color: #F8AD9D;
+            font-family: "Poppins", serif; 
+        }
+
+        .menu {
+            display: flex; 
+            justify-content: flex-end; 
+            flex-grow: 1; 
+        }
+
+        .menu-top {
+            display: flex; 
+            padding: 0;
+            list-style: none; 
+        }
+
+        li {
+            margin: 0 10px; 
+        }
+
+        a {
+            color: #F8AD9D;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #F8AD9D;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px; 
+            width: 120px; 
+            font-size: 16px; 
+        }
+
+        .button:hover {
+            background-color: #f0958e;
+            text-decoration: underline;
+        }
+
+        .tulip-center {
+            flex-grow: 1; 
+            display: flex;
+            justify-content: center; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0; 
+            flex-wrap: wrap; 
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 5px;
+        }
+
+        .shop-now {
+            font-weight: bold;
+            color: #F8AD9D; 
+            margin: 10px 0; 
+        }
+
+        .delivery-info {
+            font-size: 0.8em; 
+            color: #F8AD9D; 
+            margin: 3px 0; 
+        }
+
+        .tulip-text, .hydrangea-text {
+            text-align: center; 
+            margin: 30px 0; 
+            font-weight: bold; 
+        }
+
+        .price {
+            margin: 5px 0; 
+        }
+
+        .tulip-image, .hydrangea-image {
+            border: 2px solid #F8AD9D; 
+            border-radius: 5px; 
+            padding: 5px; 
+            margin: 10px; 
+            display: inline-block; 
+            width: 220px; 
+        }
+
+        .tulip-image img, .hydrangea-image img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+        }
+
+        .buy-button {
+            background-color: #F8AD9D; 
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%; 
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .buy-button:hover {
+            background-color: #f0958e; 
+        }
+
+        .section-border {
+            border-top: 2px solid #F8AD9D; 
+            margin: 30px 0; 
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body> 
+    <div class="header">
+        <h3 class="logo-text">bloomforme</h3>
+        <div class="tulip-center">
+            <button class="button" onclick="scrollToTop()">Home</button>
+            <a href="#tulips" class="button">Tulips</a>
+            <a href="#hydrangeas" class="button">Hydrangeas</a>
+        </div>
+        <div class="menu">
+            <ul class="menu-top">
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://i.pinimg.com/enabled/474x/de/3d/d4/de3dd4f4675a87575ee64c9f6349a997.jpg" alt="Image 1">
+        <img src="https://i.pinimg.com/enabled/236x/53/a7/87/53a78767fdbdf05820fb521e566b51a3.jpg" alt="Image 2">
+        <img src="https://i.pinimg.com/enabled/474x/c7/26/40/c72640b4c7fc07895b392c98755a1164.jpg" alt="Image 3">
+        <img src="https://i.pinimg.com/enabled/236x/1f/64/18/1f6418f2a87a037b090ea119a2c956f4.jpg" alt="Image 4">
+        <img src="https://i.pinimg.com/enabled/236x/40/b6/e6/40b6e61f571305f91f8e37e56c77f29f.jpg" alt="Image 5">
+        <img src="https://i.pinimg.com/enabled/236x/5f/60/ae/5f60ae77ef465c35ec1f848aee952098.jpg" alt="Image 6">
+        <img src="https://i.pinimg.com/enabled/236x/6a/cf/d8/6acfd8475d49d9cfaa45db7045a0ec57.jpg" alt="Image 7"> 
+    </div>
+
+    <div class="shop-now">
+        SHOP NOW FOR FRESH FLOWERS BELOW 1,000 PHP
+    </div>
+    <div class="delivery-info">
+        <em>Flowers can be delivered 3 days or less after placing the order.</em>
+    </div>
+    
+    <div class="section-border">
+        <div class="tulip-text" id="tulips">Tulips</div>
+    </div>
+
+    <div class="tulip-image">
+        <img src="https://i.pinimg.com/236x/88/39/03/8839036218759466d11b43d598e8f0c6.jpg" alt="Tulips">
+        <div class="price">435 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="tulip-image">
+        <img src="https://i.pinimg.com/enabled/236x/fd/fa/ed/fdfaed2e7a6b76cab52830342cc0d830.jpg" alt="Tulips">
+        <div class="price">500 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="tulip-image">
+        <img src="https://i.pinimg.com/enabled/236x/b1/a6/83/b1a6837395a57be050d0a2df15325a89.jpg" alt="Tulips">
+        <div class="price">500 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="section-border">
+        <div class="hydrangea-text" id="hydrangeas">Hydrangeas</div>
+    </div>
+    
+    <div class="hydrangea-image">
+        <img src="https://i.pinimg.com/enabled/236x/d4/f2/14/d4f214d1e3434365b9093e3ef2e641d5.jpg" alt="Hydrangea">
+        <div class="price">500 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="hydrangea-image">
+        <img src="https://i.pinimg.com/enabled/236x/89/13/2c/89132ca5253dc117bbddeaefb7c06092.jpg" alt="Hydrangea">
+        <div class="price">550 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="hydrangea-image">
+        <img src="https://i.pinimg.com/236x/4d/1c/7a/4d1c7a942af97077501f32cca97fc676.jpg" alt="Hydrangea">
+        <div class="price">600 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="hydrangea-image">
+        <img src="https://i.pinimg.com/enabled/474x/e9/1d/2a/e91d2a98c1dadcd2f530167b8af1f483.jpg" alt="Hydrangea">
+        <div class="price">750 PHP</div>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
